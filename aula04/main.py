@@ -56,7 +56,7 @@ if input_usuario:
         model = "gpt-4o"
     )
 
-    print(resposta_ia)
+    print(resposta_ia.choices[0].message.content)
     texto_resp_ia = "Você enviou: " + input_usuario
 
     # Resposta da IA
